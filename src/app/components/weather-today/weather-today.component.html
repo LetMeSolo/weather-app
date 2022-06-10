@@ -1,0 +1,21 @@
+<div class="container_current_weather">
+  <div class="current_weather">
+    <p class="cur_weth">current weather</p>
+    <p class="weather_date">date {{getCurrentDate()}}</p>
+  </div>
+  <div class="container_info_weather">
+    <div class="icon">
+      <img src="https://openweathermap.org/img/wn/{{weatherToday.weather[0].icon}}@4x.png" alt="weather_icon">
+      <span>{{weatherToday.weather[0].description}}</span>
+    </div>
+    <div class="temperature">
+      <p class="tempC">{{getTemp()}}°C</p>
+      <p class="tempC2">Real Feel <span>{{getTempFl()}}°</span></p>
+    </div>
+    <div class="sun_info">
+      <p class="">sunrise: {{getSunRise()}} AM</p>
+      <p>Sunset: {{getSunSet()}} PM</p>
+      <p>Duration: 14 hr</p>
+    </div>
+  </div>
+</div>

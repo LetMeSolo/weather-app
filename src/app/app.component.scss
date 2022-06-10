@@ -1,0 +1,28 @@
+.container {
+  padding-top: 10px;
+
+  .header {
+    width: 99%;
+    height: 80px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: flex-end;
+    //align-items: center;
+
+    button {
+      margin-left: 10px;
+      height: 52px;
+      width: 180px;
+    }
+
+    .example-form {
+      height: 100%;
+    }
+  }
+
+  .container_forecast_weather {
+    width: 100%;
+    height: 650px;
+  }
+}
