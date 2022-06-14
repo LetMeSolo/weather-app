@@ -1,0 +1,27 @@
+<div class="container__table">
+  <table>
+    <tr>
+      <td>{{getDayName(forecastWeather.list[2])}}</td><td>{{getHour(forecastWeather.list[1])}}</td><td>{{getHour(forecastWeather.list[2])}}</td><td>{{getHour(forecastWeather.list[3])}}</td><td>{{getHour(forecastWeather.list[4])}}</td><td>{{getHour(forecastWeather.list[5])}}</td><td>{{getHour(forecastWeather.list[6])}}</td>
+    </tr>
+
+    <tr>
+      <td></td><td><img src="https://openweathermap.org/img/wn/{{forecastWeather.list[1].weather[0].icon}}@4x.png" alt=""></td><td><img src="https://openweathermap.org/img/wn/{{forecastWeather.list[2].weather[0].icon}}@4x.png" alt=""></td><td><img src="https://openweathermap.org/img/wn/{{forecastWeather.list[3].weather[0].icon}}@4x.png" alt=""></td><td><img src="https://openweathermap.org/img/wn/{{forecastWeather.list[4].weather[0].icon}}@4x.png" alt=""></td><td><img src="https://openweathermap.org/img/wn/{{forecastWeather.list[5].weather[0].icon}}@4x.png" alt=""></td><td><img src="https://openweathermap.org/img/wn/{{forecastWeather.list[6].weather[0].icon}}@4x.png" alt=""></td>
+    </tr>
+
+    <tr>
+      <td>FORECAST</td><td>{{forecastWeather.list[1].weather[0].description}}</td><td>{{forecastWeather.list[2].weather[0].description}}</td><td>{{forecastWeather.list[3].weather[0].description}}</td><td>{{forecastWeather.list[4].weather[0].description}}</td><td>{{forecastWeather.list[5].weather[0].description}}</td><td>{{forecastWeather.list[6].weather[0].description}}</td>
+    </tr>
+
+    <tr>
+      <td>Temp (&degC)</td><td>{{getTepMathRound(forecastWeather.list[1].main.temp)}}°C</td><td>{{getTepMathRound(forecastWeather.list[2].main.temp)}}°C</td><td>{{getTepMathRound(forecastWeather.list[3].main.temp)}}°C</td><td>{{getTepMathRound(forecastWeather.list[4].main.temp)}}°C</td><td>{{getTepMathRound(forecastWeather.list[5].main.temp)}}°C</td><td>{{getTepMathRound(forecastWeather.list[6].main.temp)}}°C</td>
+    </tr>
+
+    <tr>
+      <td>Realfeel</td><td>{{getTepMathRound(forecastWeather.list[1].main.feels_like)}}°C</td><td>{{getTepMathRound(forecastWeather.list[2].main.feels_like)}}°C</td><td>{{getTepMathRound(forecastWeather.list[3].main.feels_like)}}°C</td><td>{{getTepMathRound(forecastWeather.list[4].main.feels_like)}}°C</td><td>{{getTepMathRound(forecastWeather.list[5].main.feels_like)}}°C</td><td>{{getTepMathRound(forecastWeather.list[6].main.feels_like)}}°C</td>
+    </tr>
+
+    <tr>
+      <td>Wind (km/h)</td><td>{{getSpeedMathRound(forecastWeather.list[1].wind.speed)}}°C</td><td>{{getSpeedMathRound(forecastWeather.list[2].wind.speed)}}</td><td>{{getSpeedMathRound(forecastWeather.list[3].wind.speed)}}</td><td>{{getSpeedMathRound(forecastWeather.list[4].wind.speed)}}</td><td>{{getSpeedMathRound(forecastWeather.list[5].wind.speed)}}</td><td>{{getSpeedMathRound(forecastWeather.list[6].wind.speed)}}</td>
+    </tr>
+  </table>
+</div>

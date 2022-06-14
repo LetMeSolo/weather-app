@@ -10,12 +10,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {FormsModule} from "@angular/forms";
+import { HourlyWeatherComponent } from './components/hourly-weather/hourly-weather.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherTodayComponent,
-    WeatherForecastComponent
+    WeatherForecastComponent,
+    HourlyWeatherComponent
   ],
   imports: [
     BrowserModule,

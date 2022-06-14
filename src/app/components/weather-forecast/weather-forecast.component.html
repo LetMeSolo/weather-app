@@ -1,42 +1,47 @@
 <div class="container_5DayForecast">
-  <div class="block">
-    <span class="day">{{getDayName(forecastWeather.list[7])}}</span>
-    <span class="date">{{getDateName(forecastWeather.list[7])}}</span>
-    <img src="https://openweathermap.org/img/wn/{{forecastWeather.list[7].weather[0].icon}}@4x.png" alt="${weather5days.list[7].weather[0].description}">
-    <h3 class="temp">{{getTepMathRound(forecastWeather.list[7].main.temp)}}°C</h3>
-    <span class="description">{{forecastWeather.list[7].weather[0].description}}</span>
+  <div class="block" (click)="getHourlyWeather(forecastWeather.list[0])">
+    <span class="day">{{getDayName(forecastWeather.list[0])}}</span>
+    <span class="date">{{getDateName(forecastWeather.list[0])}}</span>
+    <img src="https://openweathermap.org/img/wn/{{forecastWeather.list[0].weather[0].icon}}@4x.png" alt="${weather5days.list[7].weather[0].description}">
+    <h3 class="temp">{{getTepMathRound(forecastWeather.list[0].main.temp)}}°C</h3>
+    <span class="description">{{forecastWeather.list[0].weather[0].description}}</span>
   </div>
   <div class="line"></div>
-  <div class="block">
-    <span class="day">{{getDayName(forecastWeather.list[10])}}</span>
-    <span class="date">{{getDateName(forecastWeather.list[10])}}</span>
-    <img src="https://openweathermap.org/img/wn/{{forecastWeather.list[10].weather[0].icon}}@4x.png" alt="${weather5days.list[7].weather[0].description}">
-    <h3 class="temp">{{getTepMathRound(forecastWeather.list[10].main.temp)}}°C</h3>
-    <span class="description">{{forecastWeather.list[10].weather[0].description}}</span>
+  <div class="block" (click)="getHourlyWeather(forecastWeather.list[8])">
+    <span class="day">{{getDayName(forecastWeather.list[8])}}</span>
+    <span class="date">{{getDateName(forecastWeather.list[8])}}</span>
+    <img src="https://openweathermap.org/img/wn/{{forecastWeather.list[8].weather[0].icon}}@4x.png" alt="${weather5days.list[7].weather[0].description}">
+    <h3 class="temp">{{getTepMathRound(forecastWeather.list[8].main.temp)}}°C</h3>
+    <span class="description">{{forecastWeather.list[8].weather[0].description}}</span>
   </div>
   <div class="line"></div>
-  <div class="block">
-    <span class="day">{{getDayName(forecastWeather.list[18])}}</span>
-    <span class="date">{{getDateName(forecastWeather.list[18])}}</span>
-    <img src="https://openweathermap.org/img/wn/{{forecastWeather.list[18].weather[0].icon}}@4x.png" alt="${weather5days.list[7].weather[0].description}">
-    <h3 class="temp">{{getTepMathRound(forecastWeather.list[18].main.temp)}}°C</h3>
-    <span class="description">{{forecastWeather.list[18].weather[0].description}}</span>
+  <div class="block" (click)="getHourlyWeather(forecastWeather.list[16])">
+    <span class="day">{{getDayName(forecastWeather.list[16])}}</span>
+    <span class="date">{{getDateName(forecastWeather.list[16])}}</span>
+    <img src="https://openweathermap.org/img/wn/{{forecastWeather.list[16].weather[0].icon}}@4x.png" alt="${weather5days.list[7].weather[0].description}">
+    <h3 class="temp">{{getTepMathRound(forecastWeather.list[16].main.temp)}}°C</h3>
+    <span class="description">{{forecastWeather.list[16].weather[0].description}}</span>
   </div>
   <div class="line"></div>
-  <div class="block">
-    <span class="day">{{getDayName(forecastWeather.list[26])}}</span>
-    <span class="date">{{getDateName(forecastWeather.list[26])}}</span>
-    <img src="https://openweathermap.org/img/wn/{{forecastWeather.list[26].weather[0].icon}}@4x.png" alt="${weather5days.list[7].weather[0].description}">
-    <h3 class="temp">{{getTepMathRound(forecastWeather.list[26].main.temp)}}°C</h3>
-    <span class="description">{{forecastWeather.list[26].weather[0].description}}</span>
+  <div class="block" (click)="getHourlyWeather(forecastWeather.list[24])">
+    <span class="day">{{getDayName(forecastWeather.list[24])}}</span>
+    <span class="date">{{getDateName(forecastWeather.list[24])}}</span>
+    <img src="https://openweathermap.org/img/wn/{{forecastWeather.list[24].weather[0].icon}}@4x.png" alt="${weather5days.list[7].weather[0].description}">
+    <h3 class="temp">{{getTepMathRound(forecastWeather.list[24].main.temp)}}°C</h3>
+    <span class="description">{{forecastWeather.list[24].weather[0].description}}</span>
   </div>
   <div class="line"></div>
-  <div class="block">
-    <span class="day">{{getDayName(forecastWeather.list[34])}}</span>
-    <span class="date">{{getDateName(forecastWeather.list[34])}}</span>
-    <img src="https://openweathermap.org/img/wn/{{forecastWeather.list[34].weather[0].icon}}@4x.png" alt="${weather5days.list[7].weather[0].description}">
-    <h3 class="temp">{{getTepMathRound(forecastWeather.list[34].main.temp)}}°C</h3>
-    <span class="description">{{forecastWeather.list[34].weather[0].description}}</span>
+  <div class="block" (click)="getHourlyWeather(forecastWeather.list[32])">
+    <span class="day">{{getDayName(forecastWeather.list[32])}}</span>
+    <span class="date">{{getDateName(forecastWeather.list[32])}}</span>
+    <img src="https://openweathermap.org/img/wn/{{forecastWeather.list[32].weather[0].icon}}@4x.png" alt="${weather5days.list[7].weather[0].description}">
+    <h3 class="temp">{{getTepMathRound(forecastWeather.list[32].main.temp)}}°C</h3>
+    <span class="description">{{forecastWeather.list[32].weather[0].description}}</span>
   </div>
 </div>
+
+<div class="container__hourly1" *ngIf="isHourlyVisible">
+  <app-hourly-weather [forecastWeather]="forecastWeather"></app-hourly-weather>
+</div>
+
 

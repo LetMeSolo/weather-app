@@ -1,18 +1,16 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { IForecast } from 'src/app/shared/model/weather-app.model';
+import {Component, Input, OnInit} from '@angular/core';
+import {IForecast} from "../../shared/model/weather-app.model";
 
 @Component({
-  selector: 'app-weather-forecast',
-  templateUrl: './weather-forecast.component.html',
-  styleUrls: ['./weather-forecast.component.scss']
+  selector: 'app-hourly-weather',
+  templateUrl: './hourly-weather.component.html',
+  styleUrls: ['./hourly-weather.component.scss']
 })
-export class WeatherForecastComponent implements OnInit {
-
-  constructor() { }
+export class HourlyWeatherComponent implements OnInit {
 
   @Input() forecastWeather!: IForecast;
 
-  isHourlyVisible: boolean = false;
+  constructor() { }
 
   ngOnInit(): void {
   }
@@ -48,6 +46,11 @@ export class WeatherForecastComponent implements OnInit {
   }
 
   getHourlyWeather(array: any) {
-    this.isHourlyVisible = true;
+    this.getDayName(array);
+    this.getDateName(array);
+    this.getHour(array);
+    this.getTepMathRound(array);
+    this.getSpeedMathRound(array);
   }
+
 }
